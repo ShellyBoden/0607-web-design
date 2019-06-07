@@ -838,3 +838,7 @@ input, button,textarea {
     left: 360px;
     z-index: 9;
 }
+
+#all_rwd{
+    display: none;
+}
