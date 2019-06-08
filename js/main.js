@@ -524,236 +524,236 @@ var scene_contact = new ScrollMagic.Scene({	triggerElement: "#trigger_contact"})
 //---------------------------RWD程式碼------------------------------------------------
 
 
-var tital_rwd = new ScrollMagic.Controller();
+// var tital_rwd = new ScrollMagic.Controller();
 
-var scene_tital_rwd = new ScrollMagic.Scene({
-	triggerElement: "#trigger_door_rwd"
-})
-.setTween("#tital_rwd", 1, {opacity: 1}) // trigger a TweenMax.to tween
-//.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-.addTo(tital_rwd);
+// var scene_tital_rwd = new ScrollMagic.Scene({
+// 	triggerElement: "#trigger_door_rwd"
+// })
+// .setTween("#tital_rwd", 1, {opacity: 1}) // trigger a TweenMax.to tween
+// //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+// .addTo(tital_rwd);
 
-//剪刀路線------------------------------------------------
+// //剪刀路線------------------------------------------------
 
-	                var flightpath_RWD = {
-	                					entry : {
-	                						curviness: 1.5,
-	                						autoRotate: true,
-	                						values: [
-	                								{x: 450,	y: 0}
-	                							]
-	                					}
-	                				};
-	                				// init controller
-					var controller_RWD = new ScrollMagic.Controller();
+// 	                var flightpath_RWD = {
+// 	                					entry : {
+// 	                						curviness: 1.5,
+// 	                						autoRotate: true,
+// 	                						values: [
+// 	                								{x: 450,	y: 0}
+// 	                							]
+// 	                					}
+// 	                				};
+// 	                				// init controller
+// 					var controller_RWD = new ScrollMagic.Controller();
 
-					// create tween
-					var tween_RWD = new TimelineMax()
-						.add(TweenMax.to($("#clothes_rwd_middle"),2, {css:{bezier:flightpath_RWD.entry}, ease:Power1.easeInOut}));
-					//.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
+// 					// create tween
+// 					var tween_RWD = new TimelineMax()
+// 						.add(TweenMax.to($("#clothes_rwd_middle"),2, {css:{bezier:flightpath_RWD.entry}, ease:Power1.easeInOut}));
+// 					//.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
 
-					// build scene
-					var scene_RWD = new ScrollMagic.Scene({triggerElement: "#trigger_scissorandcloth_RWD", duration: 100, offset:100})
-									.setPin("#target")
-									.setTween(tween_RWD)
-									.addIndicators() // add indicators (requires plugin)
-									.addTo(controller_RWD);
+// 					// build scene
+// 					var scene_RWD = new ScrollMagic.Scene({triggerElement: "#trigger_scissorandcloth_RWD", duration: 100, offset:100})
+// 									.setPin("#target")
+// 									.setTween(tween_RWD)
+// 									.addIndicators() // add indicators (requires plugin)
+// 									.addTo(controller_RWD);
 
-//7 布往下掉跑出字------------------------------------------------
-					var flightpath_cloth_2_RWD = {
-										entry : {
-										values: [
-												{x: 0,	y:150}
-												]
-												}
-										};
-					// init controller
-					var controller_cloth_2_RWD = new ScrollMagic.Controller();
+// //7 布往下掉跑出字------------------------------------------------
+// 					var flightpath_cloth_2_RWD = {
+// 										entry : {
+// 										values: [
+// 												{x: 0,	y:150}
+// 												]
+// 												}
+// 										};
+// 					// init controller
+// 					var controller_cloth_2_RWD = new ScrollMagic.Controller();
 
-					// create tween
-					var tween_cloth_2_RWD = new TimelineMax()
-						.add(TweenMax.to($("#clothes_rwd_bottom"),2, {css:{bezier:flightpath_cloth_2_RWD.entry}, ease:Power1.easeInOut}));
-//						.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
+// 					// create tween
+// 					var tween_cloth_2_RWD = new TimelineMax()
+// 						.add(TweenMax.to($("#clothes_rwd_bottom"),2, {css:{bezier:flightpath_cloth_2_RWD.entry}, ease:Power1.easeInOut}));
+// //						.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
 
-					// build scene
-					var scene_cloth_2_RWD = new ScrollMagic.Scene({triggerElement: "#trigger_scissorandcloth_RWD", duration: 100, offset: 100})
-									.setPin("#target")
-									.setTween(tween_cloth_2_RWD)
-									// .addIndicators() // add indicators (requires plugin)
-									.addTo(controller_cloth_2_RWD);	
-//9 剪刀剪完------------------------------------------------
+// 					// build scene
+// 					var scene_cloth_2_RWD = new ScrollMagic.Scene({triggerElement: "#trigger_scissorandcloth_RWD", duration: 100, offset: 100})
+// 									.setPin("#target")
+// 									.setTween(tween_cloth_2_RWD)
+// 									// .addIndicators() // add indicators (requires plugin)
+// 									.addTo(controller_cloth_2_RWD);	
+// //9 剪刀剪完------------------------------------------------
 
-					var  scissorspath_rwd2= {
-						entry : {
-							curviness: 1.5,
-							autoRotate: true,
-							values: [
-									{x: 2000,	y: 0}
-								]
-						}
-					};
-					// init controller
-					var controller_scissorspath_rwd2 = new ScrollMagic.Controller();
+// 					var  scissorspath_rwd2= {
+// 						entry : {
+// 							curviness: 1.5,
+// 							autoRotate: true,
+// 							values: [
+// 									{x: 2000,	y: 0}
+// 								]
+// 						}
+// 					};
+// 					// init controller
+// 					var controller_scissorspath_rwd2 = new ScrollMagic.Controller();
 
-					// create tween
-					var tween_scissorspath_rwd2 = new TimelineMax()
-						.add(TweenMax.to($("#clothes_rwd_middle"),5000000000, {css:{bezier:scissorspath_rwd2.entry}, ease:Power1.easeInOut}));
-					//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
+// 					// create tween
+// 					var tween_scissorspath_rwd2 = new TimelineMax()
+// 						.add(TweenMax.to($("#clothes_rwd_middle"),5000000000, {css:{bezier:scissorspath_rwd2.entry}, ease:Power1.easeInOut}));
+// 					//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
 
-					// build scene
-					var scene_scissorspath_rwd2 = new ScrollMagic.Scene({triggerElement: "#trigger_petal_RWD", duration: 500, offset: 100})
-									.setPin("#target")
-									.setTween(tween_scissorspath_rwd2)
-									// .addIndicators() // add indicators (requires plugin)
-									.addTo(controller_scissorspath_rwd2);
+// 					// build scene
+// 					var scene_scissorspath_rwd2 = new ScrollMagic.Scene({triggerElement: "#trigger_petal_RWD", duration: 500, offset: 100})
+// 									.setPin("#target")
+// 									.setTween(tween_scissorspath_rwd2)
+// 									// .addIndicators() // add indicators (requires plugin)
+// 									.addTo(controller_scissorspath_rwd2);
 
-//10 布往下掉完------------------------------------------------
+// //10 布往下掉完------------------------------------------------
 
-					var clothpath_rwd_2 = {
-						entry : {
-							// curviness: 1.5,
-							// autoRotate: true,
-							values: [
-									{x: 0,	y: 1000}
-								]
-						}
-					};
-					// init controller
-					var controller_clothpath_rwd_2 = new ScrollMagic.Controller();
+// 					var clothpath_rwd_2 = {
+// 						entry : {
+// 							// curviness: 1.5,
+// 							// autoRotate: true,
+// 							values: [
+// 									{x: 0,	y: 1000}
+// 								]
+// 						}
+// 					};
+// 					// init controller
+// 					var controller_clothpath_rwd_2 = new ScrollMagic.Controller();
 
-					// create tween
-					var tween_clothpath_rwd_2 = new TimelineMax()
-						.add(TweenMax.to($("#clothes_rwd_bottom"),5000000000, {css:{bezier:clothpath_rwd_2.entry,opacity: 0}, ease:Power1.easeInOut}));
-					//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
+// 					// create tween
+// 					var tween_clothpath_rwd_2 = new TimelineMax()
+// 						.add(TweenMax.to($("#clothes_rwd_bottom"),5000000000, {css:{bezier:clothpath_rwd_2.entry,opacity: 0}, ease:Power1.easeInOut}));
+// 					//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
 
-					// build scene
-					var scene_clothpath_rwd_2 = new ScrollMagic.Scene({triggerElement: "#trigger_petal_RWD", duration: 300, offset: 100})
-									.setPin("#target")
-									.setTween(tween_clothpath_rwd_2)
-//									.addIndicators() // add indicators (requires plugin)
-									.addTo(controller_clothpath_rwd_2);
+// 					// build scene
+// 					var scene_clothpath_rwd_2 = new ScrollMagic.Scene({triggerElement: "#trigger_petal_RWD", duration: 300, offset: 100})
+// 									.setPin("#target")
+// 									.setTween(tween_clothpath_rwd_2)
+// //									.addIndicators() // add indicators (requires plugin)
+// 									.addTo(controller_clothpath_rwd_2);
 
-//11 12尺_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
-					var controller_ruler_1_rwd=new ScrollMagic.Controller();
-    				var tween_ruler_1_rwd=TweenMax.to("#ruler_rwd_1",0.2,{opacity:1});
-    				var scene_ruler_1_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_ruler_1_rwd",duration:100})
-    							.setTween(tween_ruler_1_rwd)
-//    							.addIndicators({name: "淡入"})
-								.addTo(controller_ruler_1_rwd);
+// //11 12尺_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
+// 					var controller_ruler_1_rwd=new ScrollMagic.Controller();
+//     				var tween_ruler_1_rwd=TweenMax.to("#ruler_rwd_1",0.2,{opacity:1});
+//     				var scene_ruler_1_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_ruler_1_rwd",duration:100})
+//     							.setTween(tween_ruler_1_rwd)
+// //    							.addIndicators({name: "淡入"})
+// 								.addTo(controller_ruler_1_rwd);
 
-//13 14尺_2出現 定住---------------------------------------------------------------------------------------------------------------------------------
+// //13 14尺_2出現 定住---------------------------------------------------------------------------------------------------------------------------------
 
-					var controller_ruler_2_rwd=new ScrollMagic.Controller();
-					var tween_ruler_2_rwd=TweenMax.to("#ruler_rwd_2",0.2,{opacity:1});
-					var scene_ruler_2_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_ruler_1_rwd",duration:100})
-					.setTween(tween_ruler_2_rwd)
-					.addTo(controller_ruler_2_rwd);
+// 					var controller_ruler_2_rwd=new ScrollMagic.Controller();
+// 					var tween_ruler_2_rwd=TweenMax.to("#ruler_rwd_2",0.2,{opacity:1});
+// 					var scene_ruler_2_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_ruler_1_rwd",duration:100})
+// 					.setTween(tween_ruler_2_rwd)
+// 					.addTo(controller_ruler_2_rwd);
 						
 	
-					var controller_doll_rwd=new ScrollMagic.Controller();
-					var tween_doll_rwd=TweenMax.to("#doll_rwd",0.1,{opacity:1});
-					var scene_doll_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_sciandcloth_RWD",duration:280})
-					.setTween(tween_doll_rwd)
-					.addTo(controller_doll_rwd);					
+// 					var controller_doll_rwd=new ScrollMagic.Controller();
+// 					var tween_doll_rwd=TweenMax.to("#doll_rwd",0.1,{opacity:1});
+// 					var scene_doll_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_sciandcloth_RWD",duration:280})
+// 					.setTween(tween_doll_rwd)
+// 					.addTo(controller_doll_rwd);					
 
-//15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
+// //15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
 
-    				var controller_balloon_1_rwd=new ScrollMagic.Controller();
-    				var tween_balloon_1_rwd=TweenMax.to("#balloon_rwd_1",0.2,{opacity:1});
-    				var scene_balloon_1_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_ruler_1_rwd",duration:100})
-    							.setTween(tween_balloon_1_rwd)
-								.addTo(controller_balloon_1_rwd);	
+//     				var controller_balloon_1_rwd=new ScrollMagic.Controller();
+//     				var tween_balloon_1_rwd=TweenMax.to("#balloon_rwd_1",0.2,{opacity:1});
+//     				var scene_balloon_1_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_ruler_1_rwd",duration:100})
+//     							.setTween(tween_balloon_1_rwd)
+// 								.addTo(controller_balloon_1_rwd);	
 								
-//15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
+// //15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
 
-    				var controller_balloon_2_rwd=new ScrollMagic.Controller();
-    				var tween_balloon_2_rwd=TweenMax.to("#balloon_rwd_2",0.2,{opacity:1});
-    				var scene_balloon_2_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_2_rwd",duration:200})
-    							.setTween(tween_balloon_2_rwd)
-    							.addTo(controller_balloon_2_rwd);	
+//     				var controller_balloon_2_rwd=new ScrollMagic.Controller();
+//     				var tween_balloon_2_rwd=TweenMax.to("#balloon_rwd_2",0.2,{opacity:1});
+//     				var scene_balloon_2_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_2_rwd",duration:200})
+//     							.setTween(tween_balloon_2_rwd)
+//     							.addTo(controller_balloon_2_rwd);	
 	
-					var controller_balloon_disappear_2_rwd=new ScrollMagic.Controller();
-					var tween_balloon_disappear_2_rwd=TweenMax.to("#balloon_rwd_2",0.2,{opacity:0});
-					var scene_balloon_disappear_2_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_2_disappear_rwd",duration:200})
-								.setTween(tween_balloon_disappear_2_rwd)
-								.addTo(controller_balloon_disappear_2_rwd);
+// 					var controller_balloon_disappear_2_rwd=new ScrollMagic.Controller();
+// 					var tween_balloon_disappear_2_rwd=TweenMax.to("#balloon_rwd_2",0.2,{opacity:0});
+// 					var scene_balloon_disappear_2_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_2_disappear_rwd",duration:200})
+// 								.setTween(tween_balloon_disappear_2_rwd)
+// 								.addTo(controller_balloon_disappear_2_rwd);
 
-//15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
+// //15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
 
-    				var controller_balloon_3_rwd=new ScrollMagic.Controller();
-    				var tween_balloon_3_rwd=TweenMax.to("#balloon_rwd_3",0.2,{opacity:1});
-    				var scene_balloon_3_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_3_rwd",duration:200})
-    							.setTween(tween_balloon_3_rwd)
-    							.addTo(controller_balloon_3_rwd);	
+//     				var controller_balloon_3_rwd=new ScrollMagic.Controller();
+//     				var tween_balloon_3_rwd=TweenMax.to("#balloon_rwd_3",0.2,{opacity:1});
+//     				var scene_balloon_3_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_3_rwd",duration:200})
+//     							.setTween(tween_balloon_3_rwd)
+//     							.addTo(controller_balloon_3_rwd);	
 	
-					var controller_balloon_disappear_3_rwd=new ScrollMagic.Controller();
-					var tween_balloon_disappear_3_rwd=TweenMax.to("#balloon_rwd_3",0.2,{opacity:0});
-					var scene_balloon_disappear_3_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_3_disappear_rwd",duration:200})
-								.setTween(tween_balloon_disappear_3_rwd)
-								.addTo(controller_balloon_disappear_3_rwd);
+// 					var controller_balloon_disappear_3_rwd=new ScrollMagic.Controller();
+// 					var tween_balloon_disappear_3_rwd=TweenMax.to("#balloon_rwd_3",0.2,{opacity:0});
+// 					var scene_balloon_disappear_3_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_3_disappear_rwd",duration:200})
+// 								.setTween(tween_balloon_disappear_3_rwd)
+// 								.addTo(controller_balloon_disappear_3_rwd);
 											
-//尺_1 尺_2 對話框 消失---------------------------------------------------------------------------------------------------------------------------------
+// //尺_1 尺_2 對話框 消失---------------------------------------------------------------------------------------------------------------------------------
 
-					var controller_balloon_disappear_rwd=new ScrollMagic.Controller();
-					var tween_balloon_disappear_rwd=TweenMax.to("#balloon_rwd_1",0.2,{opacity:0});
-					var scene_balloon_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_1_disappear_rwd",duration:100})
-								.setTween(tween_balloon_disappear_rwd)
-								.addTo(controller_balloon_disappear_rwd);
+// 					var controller_balloon_disappear_rwd=new ScrollMagic.Controller();
+// 					var tween_balloon_disappear_rwd=TweenMax.to("#balloon_rwd_1",0.2,{opacity:0});
+// 					var scene_balloon_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_1_disappear_rwd",duration:100})
+// 								.setTween(tween_balloon_disappear_rwd)
+// 								.addTo(controller_balloon_disappear_rwd);
 
-					var controller_ruler_2_disappear_rwd=new ScrollMagic.Controller();
-					var tween_ruler_2_disappear_rwd=TweenMax.to("#ruler_rwd_2",0.2,{opacity:0});
-					var scene_ruler_2_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_1_disappear_rwd",duration:100})
-								.setTween(tween_ruler_2_disappear_rwd)
-								.addTo(controller_ruler_2_disappear_rwd);
+// 					var controller_ruler_2_disappear_rwd=new ScrollMagic.Controller();
+// 					var tween_ruler_2_disappear_rwd=TweenMax.to("#ruler_rwd_2",0.2,{opacity:0});
+// 					var scene_ruler_2_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_1_disappear_rwd",duration:100})
+// 								.setTween(tween_ruler_2_disappear_rwd)
+// 								.addTo(controller_ruler_2_disappear_rwd);
 
-					var controller_ruler_1_disappear_rwd=new ScrollMagic.Controller();
-					var tween_ruler_1_disappear_rwd=TweenMax.to("#ruler_rwd_1",0.2,{opacity:0});
-					var scene_ruler_1_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_1_disappear_rwd",duration:100})
-								.setTween(tween_ruler_1_disappear_rwd)
-								.addTo(controller_ruler_1_disappear_rwd);
+// 					var controller_ruler_1_disappear_rwd=new ScrollMagic.Controller();
+// 					var tween_ruler_1_disappear_rwd=TweenMax.to("#ruler_rwd_1",0.2,{opacity:0});
+// 					var scene_ruler_1_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_1_disappear_rwd",duration:100})
+// 								.setTween(tween_ruler_1_disappear_rwd)
+// 								.addTo(controller_ruler_1_disappear_rwd);
 
-//娃定住(娃掉下)-------------------------------------------------------------------------------------------------------------------------------------------
+// //娃定住(娃掉下)-------------------------------------------------------------------------------------------------------------------------------------------
 					
-					var controller_doll_pin_rwd = new ScrollMagic.Controller();
+// 					var controller_doll_pin_rwd = new ScrollMagic.Controller();
 
-        			var scene_doll_pin_rwd = new ScrollMagic.Scene({triggerElement: "#trigger_balloon_1_disappear_rwd", duration: 1515})
-        							.setPin("#doll_rwd")
-									.addTo(controller_doll_pin_rwd);
+//         			var scene_doll_pin_rwd = new ScrollMagic.Scene({triggerElement: "#trigger_balloon_1_disappear_rwd", duration: 1515})
+//         							.setPin("#doll_rwd")
+// 									.addTo(controller_doll_pin_rwd);
 
-//花瓣淡入--------------------------------------------------------------------------------------------------------------------------
+// //花瓣淡入--------------------------------------------------------------------------------------------------------------------------
 
-					var controller_petal_3_rwd=new ScrollMagic.Controller();
-    				var tween_petal_3_rwd=TweenMax.to("#petal_rwd_1,#petal_rwd_2,#petal_rwd_3,#petal_rwd_4,#petal_rwd_5,#petal_rwd_6,#petal_rwd_7,#petal_rwd_8,#petal_rwd_9,#petal_rwd_10,#petal_rwd_11,#petal_rwd_12,#petal_rwd_13,#petal_rwd_14,#petal_rwd_15",0.2,{opacity:1});
-    				var scene_petal_3_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_3_disappear_rwd",duration:300})
-    							.setTween(tween_petal_3_rwd)
-    							.addTo(controller_petal_3_rwd);
+// 					var controller_petal_3_rwd=new ScrollMagic.Controller();
+//     				var tween_petal_3_rwd=TweenMax.to("#petal_rwd_1,#petal_rwd_2,#petal_rwd_3,#petal_rwd_4,#petal_rwd_5,#petal_rwd_6,#petal_rwd_7,#petal_rwd_8,#petal_rwd_9,#petal_rwd_10,#petal_rwd_11,#petal_rwd_12,#petal_rwd_13,#petal_rwd_14,#petal_rwd_15",0.2,{opacity:1});
+//     				var scene_petal_3_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_balloon_3_disappear_rwd",duration:300})
+//     							.setTween(tween_petal_3_rwd)
+//     							.addTo(controller_petal_3_rwd);
 
-//11 12尺_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
+// //11 12尺_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
 
-					var controller_text_rwd=new ScrollMagic.Controller();
-    				var tween_text_rwd=TweenMax.to("#textsol",0.2,{opacity:1});
-    				var scene_text_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_textsol_rwd",duration:300})
-    							.setTween(tween_text_rwd)
-								.addTo(controller_text_rwd);
+// 					var controller_text_rwd=new ScrollMagic.Controller();
+//     				var tween_text_rwd=TweenMax.to("#textsol",0.2,{opacity:1});
+//     				var scene_text_rwd=new ScrollMagic.Scene({triggerElement:"#trigger_textsol_rwd",duration:300})
+//     							.setTween(tween_text_rwd)
+// 								.addTo(controller_text_rwd);
 
-//信件跳出---------------------------------------------------------------------------
+// //信件跳出---------------------------------------------------------------------------
 
-					var controller_letter_rwd = new ScrollMagic.Controller();
+// 					var controller_letter_rwd = new ScrollMagic.Controller();
 
-					var scene_letter_rwd = new ScrollMagic.Scene({
-						triggerElement: "#trigger_letter_rwd"
-					})
-					.setTween("#letterpaper_rwd", 0.5, {top: -100}) // trigger a TweenMax.to tween
-					.addTo(controller_letter_rwd);
+// 					var scene_letter_rwd = new ScrollMagic.Scene({
+// 						triggerElement: "#trigger_letter_rwd"
+// 					})
+// 					.setTween("#letterpaper_rwd", 0.5, {top: -100}) // trigger a TweenMax.to tween
+// 					.addTo(controller_letter_rwd);
 
-//-----------------------------信件表單淡入----------------------------------------------
+// //-----------------------------信件表單淡入----------------------------------------------
 
-					var controller_letter_text_rwd = new ScrollMagic.Controller();
+// 					var controller_letter_text_rwd = new ScrollMagic.Controller();
 
-					var sceneletter_text_rwd = new ScrollMagic.Scene({
-						triggerElement: "#letterpaper_rwd"
-					})
-					.setTween("#text_rwd", 1, {opacity: 1}) // trigger a TweenMax.to tween
-					.addTo(controller_letter_text_rwd);	
+// 					var sceneletter_text_rwd = new ScrollMagic.Scene({
+// 						triggerElement: "#letterpaper_rwd"
+// 					})
+// 					.setTween("#text_rwd", 1, {opacity: 1}) // trigger a TweenMax.to tween
+// 					.addTo(controller_letter_text_rwd);	
 
 })		

@@ -5,7 +5,7 @@
 
     html{
 		width: 400px;
-        height: 4483px;
+        height: 10000px;
         background: #ffffff; /* Old browsers */
         background: -moz-linear-gradient(top, #ffffff 0%, #f3efab 25%, #f5b3a8 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, #ffffff 0%,#f3efab 25%,#f5b3a8 100%); /* Chrome10-25,Safari5.1-6 */
@@ -17,7 +17,7 @@
 
 	body{
 		width: 100%;
-		height: 4483px;
+		height: 10000px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -193,5 +193,176 @@
         top:3700px;
         left: 100px;
         z-index: 8;
+    }
+    #rwd_petal_1{
+        position: absolute;
+        top:4000px;
+        left: 26px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_2{
+        position: absolute;
+        top:4100px;
+        left: 52px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_3{
+        position: absolute;
+        top:3800px;
+        left: 78px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_4{
+        position: absolute;
+        top:3900px;
+        left: 104px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_5{
+        position: absolute;
+        top:4000px;
+        left: 130px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_6{
+        position: absolute;
+        top:3800px;
+        left: 156px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_7{
+        position: absolute;
+        top:3900px;
+        left: 182px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_8{
+        position: absolute;
+        top:4150px;
+        left: 208px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_9{
+        position: absolute;
+        top:3800px;
+        left: 234px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_10{
+        position: absolute;
+        top:4100px;
+        left: 260px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_11{
+        position: absolute;
+        top:3900px;
+        left: 286px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_12{
+        position: absolute;
+        top:4050px;
+        left: 312px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_13{
+        position: absolute;
+        top:4100px;
+        left: 338px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_14{
+        position: absolute;
+        top:3800px;
+        left: 364px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_15{
+        position: absolute;
+        top:3950px;
+        left: 300px;
+        /*opacity: 0;*/
+    }
+    #rwd_petal_out{
+        position: absolute;
+        top:4300px;
+        left:100px;
+        z-index: 8;
+    }
+    #rwd_petal{
+        opacity: 0;
+    }
+    #rwd_kimono{
+        position: absolute;
+        top:4540px;
+        left:85px;
+        z-index: 9;
+    }
+    #rwd_pin_kimono{
+        position: absolute;
+        top:4550px;
+        left:90px;
+        z-index: 9; 
+    }
+    #rwd_out_firework_first{
+        position: absolute;
+        top:5000px;
+        left:90px;
+        z-index: 9;         
+    }
+    #rwd_out_firework_second{
+        position: absolute;
+        top:5400px;
+        left:90px;
+        z-index: 9;         
+    }
+    #rwd_out_firework_third{
+        position: absolute;
+        top:5800px;
+        left:90px;
+        z-index: 9;   
+    }
+    #rwd_firework_1{
+        position: absolute;
+        top:3900px;
+        left:-200px;
+        opacity: 0;      
+    }
+    #rwd_firework_2{
+        position: absolute;
+        top:4000px;
+        left:160px;   
+        opacity: 0;     
+    }
+    #rwd_firework_3{
+        position: absolute;
+        top:4050px;
+        left:0px;
+        opacity: 0;      
+    }
+    #rwd_firework_4{
+        position: absolute;
+        top:4100px;
+        left:200px;   
+        opacity: 0;     
+    }
+    #rwd_firework_5{
+        position: absolute;
+        top:3830px;
+        left:130px;
+        opacity: 0;      
+    }
+    #rwd_firework_6{
+        position: absolute;
+        top:4150px;
+        left:-50px;   
+        opacity: 0;     
+    }
+    #rwd_firework_7{
+        position: absolute;
+        top:3800px;
+        left:200px;   
+        opacity: 0;     
     }
 }

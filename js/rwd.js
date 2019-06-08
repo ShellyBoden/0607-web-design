@@ -203,4 +203,48 @@ $(function () {
                 .setTween(tween_balloon_disappear_3rwd)
                 // .addIndicators()
                 .addTo(controller_balloon_disappear_3rwd);
+//------花瓣------------------------------------------------------------------------------------------------------------------------------
+    var petal_path_rwd = {
+        entry : {
+            // curviness: 1.5,
+            // autoRotate: true,
+            values: [
+                    {x: 0,	y: 4800}
+                ]
+        }
+    };
+    // init controller
+    var controller_petal_path_rwd = new ScrollMagic.Controller();
+
+    // create tween
+    var tween_petal_path_rwd = new TimelineMax()
+        .add(TweenMax.to($("#rwd_petal_1,#rwd_petal_2,#rwd_petal_3,#rwd_petal_4,#rwd_petal_5,#rwd_petal_6,#rwd_petal_7,#rwd_petal_8,#rwd_petal_9,#rwd_petal_10,#rwd_petal_11,#rwd_petal_12,#rwd_petal_13,#rwd_petal_14,#rwd_petal_15"),1, {css:{bezier:petal_path_rwd.entry}, ease:Power1.easeInOut}));
+    // build scene
+    var scene_petal_path_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_petal_out", duration: 1500, offset: 0})
+                    .setPin("#target")
+                    .setTween(tween_petal_path_rwd)
+                    // .addIndicators({name: "手動花瓣"}) // add indicators (requires plugin)
+                    .addTo(controller_petal_path_rwd);
+//------花瓣出現---------------------------------------------------------------------------------------------------------
+    var controller_petal_rwd = new ScrollMagic.Controller();
+
+    var scene_petal_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_petal_out"})
+                    .setTween("#rwd_petal", 0.1, {opacity: 1}) // trigger a TweenMax.to tween
+                    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                    .addTo(controller_petal_rwd);
+//---------------------花瓣消失------------------------------------------------------------
+    var controller_petal_rwd_kiete = new ScrollMagic.Controller();
+
+    var scene_petal_rwd_kiete = new ScrollMagic.Scene({
+        triggerElement: "#rwd_out_firework_first"
+    })
+    .setTween("#rwd_petal", 0.5, {display:'none'}) // trigger a TweenMax.to tween
+    .addTo(controller_petal_rwd_kiete);
+//娃衣服一起定住---------------------------------------------------------------------------
+    var controller_clothes_pin = new ScrollMagic.Controller();
+
+    var scene_clothes_pin = new ScrollMagic.Scene({triggerElement: "#rwd_pin_kimono", duration: 2000})
+                    .setPin("#rwd_kimono")
+                    // .addIndicators({name: "clothed_pin"}) // add indicators (requires plugin)
+                    .addTo(controller_clothes_pin);
 })
