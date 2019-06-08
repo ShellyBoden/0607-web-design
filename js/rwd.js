@@ -13,10 +13,10 @@ $(function () {
 
 	                var scissors_rwd = {
 	                					entry : {
-	                						curviness: 1.5,
+	                						curviness: 2.5,
 	                						autoRotate: true,
 	                						values: [
-	                								{x: 580,	y: 0}
+	                								{x: 550,	y: 0}
 	                							]
 	                					}
 	                				};
@@ -25,19 +25,19 @@ $(function () {
 
 					// create tween
 					var tween_rwd_scissors = new TimelineMax()
-						.add(TweenMax.to($("#rwd_scissors"),200, {css:{bezier:scissors_rwd.entry}, ease:Power1.easeInOut}));
+						.add(TweenMax.to($("#rwd_scissors"),10, {css:{bezier:scissors_rwd.entry}, ease:Power1.easeInOut}));
 					// build scene
-					var scene_rwd_scissors = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 500, offset: 0})
-									.setPin("#target")
+					var scene_rwd_scissors = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 250, offset: 0})
+									// .setPin("#target")
 									.setTween(tween_rwd_scissors)
 									.addIndicators({name: "剪刀"}) // add indicators (requires plugin)
 									.addTo(controller_rwd_scissors);
-//7 布往下掉跑出字------------------------------------------------
+// //7 布往下掉跑出字------------------------------------------------
 
 					var flightpath_cloth_2 = {
 										entry : {
 										values: [
-												{x: 0,	y: 750}
+												{x: 0,	y: 400}
 												]
 												}
 										};
@@ -48,7 +48,7 @@ $(function () {
 					var tween_cloth_2 = new TimelineMax()
 						.add(TweenMax.to($("#rwd_cloth_foot"),0.5, {css:{bezier:flightpath_cloth_2.entry}, ease:Power1.easeInOut}));
 					// build scene
-					var scene_cloth_2 = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 620, offset: 0})
+					var scene_cloth_2 = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 350, offset: 0})
 									.setPin("#target")
 									.setTween(tween_cloth_2)
 									// .addIndicators() // add indicators (requires plugin)

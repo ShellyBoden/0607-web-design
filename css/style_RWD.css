@@ -72,7 +72,7 @@
 
     #rwd_cloth_head{
         position: absolute;
-        top:650px;
+        top:618px;
         z-index: 0;
     }
 
@@ -84,20 +84,20 @@
 
     #rwd_scissors{
         position: absolute;
-        top:880px;
+        top:840px;
         left:-150px;
         z-index: 7;
     }
 
     #rwd_cloth_trigger{
         position: absolute;
-        top:650px;
+        top:700px;
         z-index: 7;
     }
 
     #rwd_cloth_out_trigger{
         position: absolute;
-        top:1200px;
+        top:1150px;
         z-index: 8;
     }
 }
