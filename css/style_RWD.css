@@ -112,9 +112,86 @@
     }
     #rwd_doll_dodo{
         position: absolute;
-        top:1130px;
+        top:1150px; /*1130*/
         left: 100px;
         opacity: 0;
+        z-index: 8;
+    }
+    #rwd_ruler_1{
+        position: absolute;
+        top:1050px; /*1030*/
+        left: 70px;
+        opacity: 0;
+        z-index: 8;
+    }
+    #rwd_ruler_2{
+        position: absolute;
+        top:1020px; /*1020*/
+        left: 100px;
+        opacity: 0;
+        z-index: 8;
+    }
+    #rwd_balloon_1{
+        position: absolute;
+        top:1055px; /*1020*/
+        left: 285px;
+        opacity: 0;
+        z-index: 7;
+    }
+    #rwd_balloon_2{
+        position: absolute;
+        top:1055px; /*1020*/
+        left: 285px;
+        opacity: 0;
+        z-index: 15;
+    }
+    #rwd_balloon_3{
+        position: absolute;
+        top:1055px; /*1020*/
+        left: 3px;
+        opacity: 0;
+        z-index: 15;
+    }
+    #rwd_ruler_1_out{
+        position: absolute;
+        top:1500px;
+        left: 100px;
+        z-index: 8;
+    }
+    #rwd_ruler_2_out{
+        position: absolute;
+        top:1900px;
+        left: 100px;
+        z-index: 8;
+    }
+    #rwd_balloon_1_out{
+        position: absolute;
+        top:2300px;
+        left: 100px;
+        z-index: 8;
+    }
+    #rwd_ruleandballoon_kiete{
+        position: absolute;
+        top:2700px;
+        left: 100px;
+        z-index: 8;
+    }
+    #rwd_balloon_2_out{
+        position: absolute;
+        top:2950px;
+        left: 100px;
+        z-index: 8;
+    }
+    #rwd_balloon_3_out{
+        position: absolute;
+        top:3300px;
+        left: 100px;
+        z-index: 8;
+    }
+    #rwd_ruleandballoon2_kiete{
+        position: absolute;
+        top:3700px;
+        left: 100px;
         z-index: 8;
     }
 }
