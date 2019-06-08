@@ -42,14 +42,18 @@
         width: auto;
         position: absolute; 
         top: 0px;
-        left: 300px;
+        left: 250px;
         z-index: 3;
-        transform-origin: 0 0;
+        transform-origin: 300 0;
         transform: rotate3d(0, 1, 0, 60deg);    
     }
 
     #rwd_door{
         display: flex;
+    }
+
+    #rwd_wardrobe{
+        z-index: 1;
     }
 
     #rwd_door_trigger{
@@ -64,5 +68,36 @@
         left: 8px;
         z-index: 4;
         opacity: 0;
+    }
+
+    #rwd_cloth_head{
+        position: absolute;
+        top:650px;
+        z-index: 0;
+    }
+
+    #rwd_cloth_foot{
+        position: absolute;
+        top:470px;
+        z-index: -1;
+    }
+
+    #rwd_scissors{
+        position: absolute;
+        top:880px;
+        left:-150px;
+        z-index: 7;
+    }
+
+    #rwd_cloth_trigger{
+        position: absolute;
+        top:650px;
+        z-index: 7;
+    }
+
+    #rwd_cloth_out_trigger{
+        position: absolute;
+        top:1200px;
+        z-index: 8;
     }
 }
