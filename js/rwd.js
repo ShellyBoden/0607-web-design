@@ -1,119 +1,100 @@
 $(function () { 
+//對話框出現------------------------------------------------
     var tital_rwd = new ScrollMagic.Controller();
 
     var scene_tital_rwd = new ScrollMagic.Scene({
         triggerElement: "#rwd_door_trigger"
     })
     .setTween("#rwd_tital", 1.5, {opacity: 1}) // trigger a TweenMax.to tween
-    .addIndicators({name: "對話框的淡入淡出"}) // add indicators (requires plugin)
+    // .addIndicators({name: "對話框的淡入淡出"}) // add indicators (requires plugin)
     .addTo(tital_rwd);
 
-//6 剪刀路線------------------------------------------------
-
-
-	                var scissors_rwd = {
-	                					entry : {
-	                						curviness: 2.5,
-	                						autoRotate: true,
-	                						values: [
-	                								{x: 550,	y: 0}
-	                							]
-	                					}
-	                				};
-	                				// init controller
-					var controller_rwd_scissors = new ScrollMagic.Controller();
-
-					// create tween
-					var tween_rwd_scissors = new TimelineMax()
-						.add(TweenMax.to($("#rwd_scissors"),10, {css:{bezier:scissors_rwd.entry}, ease:Power1.easeInOut}));
-					// build scene
-					var scene_rwd_scissors = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 250, offset: 0})
-									// .setPin("#target")
-									.setTween(tween_rwd_scissors)
-									.addIndicators({name: "剪刀"}) // add indicators (requires plugin)
-									.addTo(controller_rwd_scissors);
-// //7 布往下掉跑出字------------------------------------------------
-
-					var flightpath_cloth_2 = {
-										entry : {
-										values: [
-												{x: 0,	y: 400}
-												]
-												}
-										};
-					// init controller
-					var controller_cloth_2 = new ScrollMagic.Controller();
-
-					// create tween
-					var tween_cloth_2 = new TimelineMax()
-						.add(TweenMax.to($("#rwd_cloth_foot"),0.5, {css:{bezier:flightpath_cloth_2.entry}, ease:Power1.easeInOut}));
-					// build scene
-					var scene_cloth_2 = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 350, offset: 0})
-									.setPin("#target")
-									.setTween(tween_cloth_2)
-									// .addIndicators() // add indicators (requires plugin)
-									.addTo(controller_cloth_2);
-
-// //8 布剪刀一起定住---------------------------------------------------------------------------
-
-// 					var controller_sc_pin = new ScrollMagic.Controller();
-
-// 					var scene_sc_pin = new ScrollMagic.Scene({triggerElement: "#trigger_pin_sciandcloth", duration: 1000})
-// 									.setPin("#pin2")
-// 									// .addIndicators() // add indicators (requires plugin)
-// 									.addTo(controller_sc_pin);
-					
-// //9 剪刀剪完------------------------------------------------
-
-// 					var  scissorspath= {
-// 						entry : {
-// 							curviness: 1.5,
-// 							autoRotate: true,
-// 							values: [
-// 									{x: 2000,	y: 0}
-// 								]
-// 						}
-// 					};
-// 					// init controller
-// 					var controller_scissorspath = new ScrollMagic.Controller();
-
-// 					// create tween
-// 					var tween_scissorspath = new TimelineMax()
-// 						.add(TweenMax.to($("#scissors"),5000000000, {css:{bezier:scissorspath.entry}, ease:Power1.easeInOut}));
-// 					//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
-
-// 					// build scene
-// 					var scene_scissorspath = new ScrollMagic.Scene({triggerElement: "#trigger_sciandcloth_out", duration: 500, offset: 100})
-// 									.setPin("#target")
-// 									.setTween(tween_scissorspath)
-// 									// .addIndicators() // add indicators (requires plugin)
-// 									.addTo(controller_scissorspath);
-
-//10 布往下掉完------------------------------------------------
-
-					var clothpath = {
+//剪刀路線------------------------------------------------
+	var scissors_rwd = {
 						entry : {
-							// curviness: 1.5,
-							// autoRotate: true,
+							curviness: 2.5,
+							autoRotate: true,
 							values: [
-									{x: 0,	y: 1000}
+									{x: 550,	y: 0}
 								]
 						}
 					};
 					// init controller
-					var controller_clothpath = new ScrollMagic.Controller();
+	var controller_rwd_scissors = new ScrollMagic.Controller
+	// create tween
+	var tween_rwd_scissors = new TimelineMax()
+		.add(TweenMax.to($("#rwd_scissors"),10, {css:{bezier:scissors_rwd.entry}, ease:Power1.easeInOut}));
+	// build scene
+	var scene_rwd_scissors = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 250, offset: 0})
+					// .setPin("#target")
+					.setTween(tween_rwd_scissors)
+					// .addIndicators({name: "剪刀"}) // add indicators (requires plugin)
+					.addTo(controller_rwd_scissors);
+//布往下掉跑出字------------------------------------------------
 
-					// create tween
-					var tween_clothpath = new TimelineMax()
-						.add(TweenMax.to($("#rwd_cloth_foot"),5000000000, {css:{bezier:clothpath.entry,opacity: 0}, ease:Power1.easeInOut}));
-					//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
+	var rwd_cloth_foot = {
+						entry : {
+						values: [
+								{x: 0,	y: 400}
+								]
+								}
+						};
+	// init controller
+	var controller_rwd_cloth_foot = new ScrollMagic.Controller();
 
-					// build scene
-					var scene_clothpath = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_out_trigger", duration: 100, offset: 0})
-									.setPin("#target")
-									.setTween(tween_clothpath)
-									// .addIndicators() // add indicators (requires plugin)
-									.addTo(controller_clothpath);
+	// create tween
+	var tween_rwd_cloth_foot = new TimelineMax()
+		.add(TweenMax.to($("#rwd_cloth_foot"),0.5, {css:{bezier:rwd_cloth_foot.entry}, ease:Power1.easeInOut}));
+	// build scene
+	var scene_rwd_cloth_foot = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_trigger", duration: 350, offset: 0})
+					// .setPin("#target")
+					.setTween(tween_rwd_cloth_foot)
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller_rwd_cloth_foot);
 
+//10 布往下掉完------------------------------------------------
+	var rwd_cloth_foot_out = {
+		entry : {
+			// curviness: 1.5,
+			// autoRotate: true,
+			values: [
+					{x: 0,	y: 1000}
+				]
+		}
+	};
+	// init controller
+	var controller_rwd_cloth_foot_out = new ScrollMagic.Controller
+	// create tween
+	var tween_rwd_cloth_foot_out = new TimelineMax()
+		.add(TweenMax.to($("#rwd_cloth_foot"),50, {css:{bezier:rwd_cloth_foot_out.entry,opacity: 0}, ease:Power1.easeInOut}));
+	//								.add(TweenMax.to($("#scissors"), 3, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}
+	// build scene
+	var scene_rwd_cloth_foot_out = new ScrollMagic.Scene({triggerElement: "#rwd_cloth_out_trigger", duration: 100, offset: 0})
+					// .setPin("#target")
+					.setTween(tween_rwd_cloth_foot_out)
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller_rwd_cloth_foot_out);
+//---------------------------------------------------------------------
+    var scissors_rwd_out = new ScrollMagic.Controller();
 
+    var scene_scissors_rwd_out = new ScrollMagic.Scene({
+        triggerElement: "#rwd_scissors_out_trigger"
+    })
+    .setTween("#rwd_scissors", 0.5, {display:'none'}) // trigger a TweenMax.to tween
+    .addTo(scissors_rwd_out);
+//---------------------------------------------------------------------
+    var doll_rwd = new ScrollMagic.Controller();
+
+    var scene_doll_rwd = new ScrollMagic.Scene({
+        triggerElement: "#rwd_dodo_out"
+    })
+    .setTween("#rwd_doll_dodo", 0.5, {opacity:1}) // trigger a TweenMax.to tween
+    .addTo(scissors_rwd_out);
+//娃定住(娃掉下)-------------------------------------------------------------------------------------------------------------------------------------------
+var controller_doll_pin_rwd = new ScrollMagic.Controller();
+
+var scene_doll_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 9000, offset: 100})
+                .setPin("#rwd_doll_dodo")
+                // .addIndicators({name: "doll_pin"}) // add indicators (requires plugin)
+                .addTo(controller_doll_pin_rwd);
 })
