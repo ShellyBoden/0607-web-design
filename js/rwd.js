@@ -243,23 +243,30 @@ $(function () {
 //娃衣服一起定住---------------------------------------------------------------------------
     var controller_clothes_in_rwd = new ScrollMagic.Controller();
 
-    var scene_clothes_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_pin_kimono", duration: 2000})
+    var scene_clothes_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_pin_kimono", duration: 5000})
                     .setPin("#rwd_kimono")
                     // .addIndicators({name: "clothed_pin"}) // add indicators (requires plugin)
                     .addTo(controller_clothes_in_rwd);
 
     var controller_firework_pin_rwd = new ScrollMagic.Controller
-    var scene_firework_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_first", duration: 2000})
+    var scene_firework_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_pin_kimono", duration: 5000})
                     .setPin("#rwd_firework_all")
                     // .addIndicators({name: "clothed_pin"}) // add indicators (requires plugin)
                     .addTo(controller_firework_pin_rwd);
-//-------------------------------------------------------------------------------------------
+//-1------------------------------------------------------------------------------------------
     var controller_firework_rwd_1 = new ScrollMagic.Controller();
 
     var scene_firework_rwd_1 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_first"})
         .setTween("#rwd_firework_1", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
                 // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
         .addTo(controller_firework_rwd_1);
+//-1消失----------------------------------------------------------------------------------------
+    var controller_firework_rwd_1_kiete = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_1_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_kiete_firework_first"})
+        .setTween("#rwd_firework_1", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_1_kiete);
 //-2------------------------------------------------------------------
     var controller_firework_rwd_2 = new ScrollMagic.Controller();
 
@@ -267,19 +274,108 @@ $(function () {
         .setTween("#rwd_firework_2", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
         // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
         .addTo(controller_firework_rwd_2);
+//-2消失----------------------------------------------------------------------------------------
+    var controller_firework_rwd_2_kiete = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_2_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_kiete_firework_first"})
+        .setTween("#rwd_firework_2", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_2_kiete);
 //-3------------------------------------------------------------------
-var controller_firework_rwd_3 = new ScrollMagic.Controller();
+    var controller_firework_rwd_3 = new ScrollMagic.Controller();
 
-var scene_firework_rwd_3 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_second"})
-    .setTween("#rwd_firework_3", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
-    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-    .addTo(controller_firework_rwd_3);
+    var scene_firework_rwd_3 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_second"})
+        .setTween("#rwd_firework_3", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+        // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_3);
+//-3消失----------------------------------------------------------------------------------------
+    var controller_firework_rwd_3_kiete = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_3_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_kiete_firework_second"})
+        .setTween("#rwd_firework_3", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_3_kiete);
 //-4------------------------------------------------------------------
-var controller_firework_rwd_4 = new ScrollMagic.Controller();
+    var controller_firework_rwd_4 = new ScrollMagic.Controller();
 
-var scene_firework_rwd_4 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_second"})
-    .setTween("#rwd_firework_4", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
-    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-    .addTo(controller_firework_rwd_4);
+    var scene_firework_rwd_4 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_second"})
+        .setTween("#rwd_firework_4", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+        // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_4);
+//-4消失----------------------------------------------------------------------------------------
+    var controller_firework_rwd_4_kiete = new ScrollMagic.Controller();
 
+    var scene_firework_rwd_4_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_kiete_firework_second"})
+        .setTween("#rwd_firework_4", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_4_kiete);
+//-5------------------------------------------------------------------
+    var controller_firework_rwd_5 = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_5 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_third"})
+        .setTween("#rwd_firework_5", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+        // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_5);
+//-5消失----------------------------------------------------------------------------------------
+    var controller_firework_rwd_5_kiete = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_5_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_kiete_firework_third"})
+        .setTween("#rwd_firework_5", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_5_kiete);
+//-6------------------------------------------------------------------
+    var controller_firework_rwd_6 = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_6 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_third"})
+        .setTween("#rwd_firework_6", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+        // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_6);
+//-6消失----------------------------------------------------------------------------------------
+    var controller_firework_rwd_6_kiete = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_6_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_kiete_firework_third"})
+        .setTween("#rwd_firework_6", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_6_kiete);
+//-嘟嘟消失----------------------------------------------------------------------------------------
+    var controller_dodo_rwd_kiete = new ScrollMagic.Controller();
+
+    var scene_dodo_rwd_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_kiete"})
+        .setTween("#rwd_doll_dodo", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_dodo_rwd_kiete);
+
+    var controller_kimono_rwd_kiete = new ScrollMagic.Controller();
+
+    var scene_kimono_rwd_kiete = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_kiete"})
+        .setTween("#rwd_kimono", 0.5, {opacity: 0}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_kimono_rwd_kiete);
+//-心出現+定住-------------------------------------------------------------------------------------------
+    var controller_heart_pin_rwd = new ScrollMagic.Controller();
+    var scene_heart_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_kiete", duration: 1000})
+                    .setPin("#rwd_heart_and_text")
+                    // .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller_heart_pin_rwd);
+
+    var controller_heart_out_rwd = new ScrollMagic.Controller();
+
+    var scene_heart_out_rwd = new ScrollMagic.Scene({	triggerElement: "#rwd_heart_out"})
+                    .setTween("#rwd_heart", 2, {opacity: 1}) // trigger a TweenMax.to tween
+                    // .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller_heart_out_rwd);
+//-字出現----------------------------------------------------------------------------------------------
+    var controller_text_out_1_rwd = new ScrollMagic.Controller();
+
+    var scene_text_out_1_rwd = new ScrollMagic.Scene({	triggerElement: "#rwd_text1_out"})
+                    .setTween("#rwd_heart_text_1", 2, {opacity: 1}) // trigger a TweenMax.to tween
+                    // .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller_text_out_1_rwd);
+
+    var controller_text_out_2_rwd = new ScrollMagic.Controller();
+
+    var scene_text_out_2_rwd = new ScrollMagic.Scene({	triggerElement: "#rwd_text2_out"})
+                    .setTween("#rwd_heart_text_2", 2, {opacity: 1}) // trigger a TweenMax.to tween
+                    // .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller_text_out_2_rwd);
 })
