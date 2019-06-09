@@ -564,28 +564,47 @@
         font-family: '微軟正黑體';
         font-size:16px;
         color: #622002;
-        left: 50px; /*68*/
+        left: 68px; /*68*/
         opacity: 0;
         z-index: 15;
         text-align: center;
     }
     
-    #rwd_letter_text input, button,textarea {
+    #rwd_letter_text input{
+        width: 70%;
+        font-family: '微軟正黑體';
+        font-size:16px;
+        color: #622002;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #622002;
+    }
+
+    #rwd_letter_text button{
         width: 100%;
         font-family: '微軟正黑體';
         font-size:16px;
         color: #622002;
         border: none;
         background: none;
-        border-bottom: 0.25px solid #622002;
+         border: 1px solid #000000;
     }
+
+    #rwd_letter_text textarea{
+        width: 100%;
+        font-family: '微軟正黑體';
+        font-size:16px;
+        color: #622002;
+        border: none;
+        background: none;
+    }
+
     
     #rwd_send{
         display: block;
         margin: 0 auto;
         width: 30%;
         border-radius: 30px;
-        background-color: #622002;
         color: #fff;
         cursor: pointer;
         border: none;
