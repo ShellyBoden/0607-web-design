@@ -378,4 +378,22 @@ $(function () {
                     .setTween("#rwd_heart_text_2", 2, {opacity: 1}) // trigger a TweenMax.to tween
                     // .addIndicators() // add indicators (requires plugin)
                     .addTo(controller_text_out_2_rwd);
+//信件跳出---------------------------------------------------------------------------
+    var controller_letter_rwd = new ScrollMagic.Controller();
+
+    var scene_letter_rwd = new ScrollMagic.Scene({
+        triggerElement: "#rwd_letter_out"
+    })
+    .setTween("#rwd_letterpaper", 0.5, {top: 8800}) // trigger a TweenMax.to tween
+    // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller_letter_rwd);
+//-----------------------------信件表單淡入----------------------------------------------
+    var controller_letter_text = new ScrollMagic.Controller();
+
+    var sceneletter_text = new ScrollMagic.Scene({
+        triggerElement: "#rwd_letter_out"
+    })
+    .setTween("#rwd_letter_text", 1, {opacity: 1}) // trigger a TweenMax.to tween
+    // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller_letter_text);
 })

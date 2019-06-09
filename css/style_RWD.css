@@ -5,7 +5,7 @@
 
     html{
 		width: 400px;
-        height: 10000px;
+        height: 9270px;
         background: #ffffff; /* Old browsers */
         background: -moz-linear-gradient(top, #ffffff 0%, #f3efab 25%, #f5b3a8 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, #ffffff 0%,#f3efab 25%,#f5b3a8 100%); /* Chrome10-25,Safari5.1-6 */
@@ -17,7 +17,7 @@
 
 	body{
 		width: 100%;
-		height: 10000px;
+		height: 9270px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -523,5 +523,61 @@
         top:1780px;
         left:78px;
         opacity: 0;
+    }
+    #rwd_letterpaper{
+        position: absolute;
+        top:9080px;
+        left:32px;
+    }
+    #rwd_envelope_2{
+        position: absolute;
+        top:9043px;
+        left:22px;
+        z-index: 1;
+    }
+    #rwd_envelope_1{
+        position: absolute;
+        top:8847px;
+        left:6px;
+        z-index: -1;
+    }
+    #rwd_letter_out{
+        position: absolute;
+        top:8800px;
+        left:6px;
+        z-index: 8;
+    }
+
+    #rwd_letter_text{
+        position: absolute;
+        top:8870px;
+        font-family: '微軟正黑體';
+        font-size:16px;
+        color: #622002;
+        left: 68px;
+        opacity: 0;
+        z-index: 15;
+        text-align: center;
+    }
+    
+    #rwd_letter_text input, button,textarea {
+        width: 100%;
+        font-family: '微軟正黑體';
+        font-size:16px;
+        color: #622002;
+        border: none;
+        background: none;
+        border-bottom: 0.25px solid #622002;
+    }
+    
+    #rwd_send{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        border-radius: 30px;
+        background-color: #622002;
+        color: #fff;
+        cursor: pointer;
+        border: none;
     }
 }
