@@ -396,12 +396,12 @@ $(function () {
     // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller_letter_rwd);
 //-----------------------------信件表單淡入----------------------------------------------
-    var controller_letter_text = new ScrollMagic.Controller();
+    var controller_letter_text_rwd = new ScrollMagic.Controller();
 
-    var sceneletter_text = new ScrollMagic.Scene({
+    var sceneletter_text_rwd = new ScrollMagic.Scene({
         triggerElement: "#rwd_letter_out"
     })
     .setTween("#rwd_letter_text", 1, {opacity: 1}) // trigger a TweenMax.to tween
     // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-    .addTo(controller_letter_text);
+    .addTo(controller_letter_text_rwd);
 })
