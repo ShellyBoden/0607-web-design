@@ -240,6 +240,14 @@ $(function () {
     })
     .setTween("#rwd_petal", 0.5, {display:'none'}) // trigger a TweenMax.to tween
     .addTo(controller_petal_rwd_kiete);
+//--------------------煙火出現------------------------------------------------------------
+    // var controller_firework_rwd_css = new ScrollMagic.Controller();
+
+    // var scene_firework_rwd_css = new ScrollMagic.Scene({
+    //     triggerElement: "#firework_rwd_css"
+    // })
+    // .setTween("#rwd_firework_all", 0.1, {display:' '}) // trigger a TweenMax.to tween
+    // .addTo(controller_firework_rwd_css);
 //娃衣服一起定住---------------------------------------------------------------------------
     var controller_clothes_in_rwd = new ScrollMagic.Controller();
 
