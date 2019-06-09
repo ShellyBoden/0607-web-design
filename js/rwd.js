@@ -98,97 +98,97 @@ $(function () {
                     // .addIndicators({name: "doll_pin"}) // add indicators (requires plugin)
                     .addTo(controller_doll_pin_rwd);
 //11 12尺_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
-    var controller_ruler_1=new ScrollMagic.Controller();
-    var tween_ruler_1=TweenMax.to("#rwd_ruler_1",0.2,{opacity:1});
-    var scene_ruler_1=new ScrollMagic.Scene({triggerElement:"#rwd_ruler_1_out",duration:300})
-                .setTween(tween_ruler_1)
+    var controller_ruler_1_rwd=new ScrollMagic.Controller();
+    var tween_ruler_1_rwd=TweenMax.to("#rwd_ruler_1",0.2,{opacity:1});
+    var scene_ruler_1_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_ruler_1_out",duration:300})
+                .setTween(tween_ruler_1_rwd)
                 // .addIndicators({name: "淡入"})
-                .addTo(controller_ruler_1);
+                .addTo(controller_ruler_1_rwd);
 
 
-    var controller_ruler_1_pin = new ScrollMagic.Controller();
-    var scene_ruler_1_pin = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 2500})
+    var controller_ruler_1_pin_rwd = new ScrollMagic.Controller();
+    var scene_ruler_1_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 2500})
                         .setPin("#rwd_ruler_1")
                         // .addIndicators({name: "R1"}) // add indicators (requires plugin)
-                        .addTo(controller_ruler_1_pin);
+                        .addTo(controller_ruler_1_pin_rwd);
 
 // //13 14尺_2出現 定住---------------------------------------------------------------------------------------------------------------------------------
-    var controller_ruler_2=new ScrollMagic.Controller();
-    var tween_ruler_2=TweenMax.to("#rwd_ruler_2",0.2,{opacity:1});
-    var scene_ruler_2=new ScrollMagic.Scene({triggerElement:"#rwd_ruler_2_out",duration:300})
-                .setTween(tween_ruler_2)
+    var controller_ruler_2_rwd=new ScrollMagic.Controller();
+    var tween_ruler_2_rwd=TweenMax.to("#rwd_ruler_2",0.2,{opacity:1});
+    var scene_ruler_2_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_ruler_2_out",duration:300})
+                .setTween(tween_ruler_2_rwd)
                 // .addIndicators()
-                .addTo(controller_ruler_2);
+                .addTo(controller_ruler_2_rwd);
 
 
-    var controller_ruler_2_pin = new ScrollMagic.Controller();
-    var scene_ruler_2_pin = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 2500})
+    var controller_ruler_2_pin_rwd = new ScrollMagic.Controller();
+    var scene_ruler_2_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 2500})
                     .setPin("#rwd_ruler_2")
                     // .addIndicators({name: "R2"}) // add indicators (requires plugin)
-                    .addTo(controller_ruler_2_pin);
+                    .addTo(controller_ruler_2_pin_rwd);
 //15 對話框_1出現 定住---------------------------------------------------------------------------------------------------------------------------------
-    var controller_balloon_1=new ScrollMagic.Controller();
-    var tween_balloon_1=TweenMax.to("#rwd_balloon_1",0.2,{opacity:1});
-    var scene_balloon_1=new ScrollMagic.Scene({triggerElement:"#rwd_balloon_1_out",duration:200})
-                .setTween(tween_balloon_1)
+    var controller_balloon_1_rwd=new ScrollMagic.Controller();
+    var tween_balloon_1_rwd=TweenMax.to("#rwd_balloon_1",0.2,{opacity:1});
+    var scene_balloon_1_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_balloon_1_out",duration:200})
+                .setTween(tween_balloon_1_rwd)
                 // .addIndicators()
-                .addTo(controller_balloon_1);
+                .addTo(controller_balloon_1_rwd);
 
 
-    var controller_balloon_1_pin = new ScrollMagic.Controller();
-    var scene_balloon_1_pin = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 2500})
+    var controller_balloon_1_pin_rwd = new ScrollMagic.Controller();
+    var scene_balloon_1_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 2500})
                     .setPin("#rwd_balloon_1")
                     // .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller_balloon_1_pin);
+                    .addTo(controller_balloon_1_pin_rwd);
 //尺_1 尺_2 對話框 消失---------------------------------------------------------------------------------------------------------------------------------
-    var controller_balloon_disappear=new ScrollMagic.Controller();
-    var tween_balloon_disappear=TweenMax.to("#rwd_balloon_1",0.2,{opacity:0});
-    var scene_balloon_disappear=new ScrollMagic.Scene({triggerElement:"#rwd_ruleandballoon_kiete",duration:200})
-                .setTween(tween_balloon_disappear)
+    var controller_balloon_disappear_rwd=new ScrollMagic.Controller();
+    var tween_balloon_disappear_rwd=TweenMax.to("#rwd_balloon_1",0.2,{opacity:0});
+    var scene_balloon_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_ruleandballoon_kiete",duration:200})
+                .setTween(tween_balloon_disappear_rwd)
                 // .addIndicators()
-                .addTo(controller_balloon_disappear);
+                .addTo(controller_balloon_disappear_rwd);
 
-    var controller_ruler_2_disappear=new ScrollMagic.Controller();
-    var tween_ruler_2_disappear=TweenMax.to("#rwd_ruler_2",0.2,{opacity:0});
-    var scene_ruler_2_disappear=new ScrollMagic.Scene({triggerElement:"#rwd_ruleandballoon_kiete",duration:200})
-                .setTween(tween_ruler_2_disappear)
+    var controller_ruler_2_disappear_rwd=new ScrollMagic.Controller();
+    var tween_ruler_2_disappear_rwd=TweenMax.to("#rwd_ruler_2",0.2,{opacity:0});
+    var scene_ruler_2_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_ruleandballoon_kiete",duration:200})
+                .setTween(tween_ruler_2_disappear_rwd)
                 // .addIndicators()
-                .addTo(controller_ruler_2_disappear);
+                .addTo(controller_ruler_2_disappear_rwd);
 
-    var controller_ruler_1_disappear=new ScrollMagic.Controller();
-    var tween_ruler_1_disappear=TweenMax.to("#rwd_ruler_1",0.2,{opacity:0});
-    var scene_ruler_1_disappear=new ScrollMagic.Scene({triggerElement:"#rwd_ruleandballoon_kiete",duration:200})
-                .setTween(tween_ruler_1_disappear)
+    var controller_ruler_1_disappear_rwd=new ScrollMagic.Controller();
+    var tween_ruler_1_disappear_rwd=TweenMax.to("#rwd_ruler_1",0.2,{opacity:0});
+    var scene_ruler_1_disappear_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_ruleandballoon_kiete",duration:200})
+                .setTween(tween_ruler_1_disappear_rwd)
                 // .addIndicators()
-                .addTo(controller_ruler_1_disappear);
+                .addTo(controller_ruler_1_disappear_rwd);
 //15 對話框_2出現 定住---------------------------------------------------------------------------------------------------------------------------------
-    var controller_balloon_2=new ScrollMagic.Controller();
-    var tween_balloon_2=TweenMax.to("#rwd_balloon_2",0.2,{opacity:1});
-    var scene_balloon_2=new ScrollMagic.Scene({triggerElement:"#rwd_balloon_2_out",duration:200})
-                .setTween(tween_balloon_2)
+    var controller_balloon_2_rwd=new ScrollMagic.Controller();
+    var tween_balloon_2_rwd=TweenMax.to("#rwd_balloon_2",0.2,{opacity:1});
+    var scene_balloon_2_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_balloon_2_out",duration:200})
+                .setTween(tween_balloon_2_rwd)
                 // .addIndicators()
-                .addTo(controller_balloon_2);
+                .addTo(controller_balloon_2_rwd);
 
 
-    var controller_balloon_2_pin = new ScrollMagic.Controller();
-    var scene_balloon_2_pin = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 3500})
+    var controller_balloon_2_pin_rwd = new ScrollMagic.Controller();
+    var scene_balloon_2_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 3500})
                     .setPin("#rwd_balloon_2")
                     // .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller_balloon_2_pin);
+                    .addTo(controller_balloon_2_pin_rwd);
 // 15 對話框_3出現 定住---------------------------------------------------------------------------------------------------------------------------------
-    var controller_balloon_3=new ScrollMagic.Controller();
-    var tween_balloon_3=TweenMax.to("#rwd_balloon_3",0.2,{opacity:1});
-    var scene_balloon_3=new ScrollMagic.Scene({triggerElement:"#rwd_balloon_3_out",duration:200})
-                .setTween(tween_balloon_3)
+    var controller_balloon_3_rwd=new ScrollMagic.Controller();
+    var tween_balloon_3_rwd=TweenMax.to("#rwd_balloon_3",0.2,{opacity:1});
+    var scene_balloon_3_rwd=new ScrollMagic.Scene({triggerElement:"#rwd_balloon_3_out",duration:200})
+                .setTween(tween_balloon_3_rwd)
                 // .addIndicators()
-                .addTo(controller_balloon_3);
+                .addTo(controller_balloon_3_rwd);
 
 
-    var controller_balloon_3_pin = new ScrollMagic.Controller();
-    var scene_balloon_3_pin = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 3500})
+    var controller_balloon_3_pin_rwd = new ScrollMagic.Controller();
+    var scene_balloon_3_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_dodo_out", duration: 3500})
                     .setPin("#rwd_balloon_3")
                     // .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller_balloon_3_pin);
+                    .addTo(controller_balloon_3_pin_rwd);
 //尺_1 尺_2 對話框 消失---------------------------------------------------------------------------------------------------------------------------------
     var controller_balloon_disappear_2rwd=new ScrollMagic.Controller();
     var tween_balloon_disappear_2rwd=TweenMax.to("#rwd_balloon_2",0.2,{opacity:0});
@@ -229,7 +229,7 @@ $(function () {
     var controller_petal_rwd = new ScrollMagic.Controller();
 
     var scene_petal_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_petal_out"})
-                    .setTween("#rwd_petal", 0.1, {opacity: 1}) // trigger a TweenMax.to tween
+                    .setTween("#rwd_petal", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
                     // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                     .addTo(controller_petal_rwd);
 //---------------------花瓣消失------------------------------------------------------------
@@ -241,10 +241,45 @@ $(function () {
     .setTween("#rwd_petal", 0.5, {display:'none'}) // trigger a TweenMax.to tween
     .addTo(controller_petal_rwd_kiete);
 //娃衣服一起定住---------------------------------------------------------------------------
-    var controller_clothes_pin = new ScrollMagic.Controller();
+    var controller_clothes_in_rwd = new ScrollMagic.Controller();
 
-    var scene_clothes_pin = new ScrollMagic.Scene({triggerElement: "#rwd_pin_kimono", duration: 2000})
+    var scene_clothes_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_pin_kimono", duration: 2000})
                     .setPin("#rwd_kimono")
                     // .addIndicators({name: "clothed_pin"}) // add indicators (requires plugin)
-                    .addTo(controller_clothes_pin);
+                    .addTo(controller_clothes_in_rwd);
+
+    var controller_firework_pin_rwd = new ScrollMagic.Controller
+    var scene_firework_pin_rwd = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_first", duration: 2000})
+                    .setPin("#rwd_firework_all")
+                    // .addIndicators({name: "clothed_pin"}) // add indicators (requires plugin)
+                    .addTo(controller_firework_pin_rwd);
+//-------------------------------------------------------------------------------------------
+    var controller_firework_rwd_1 = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_1 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_first"})
+        .setTween("#rwd_firework_1", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_1);
+//-2------------------------------------------------------------------
+    var controller_firework_rwd_2 = new ScrollMagic.Controller();
+
+    var scene_firework_rwd_2 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_first"})
+        .setTween("#rwd_firework_2", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+        // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+        .addTo(controller_firework_rwd_2);
+//-3------------------------------------------------------------------
+var controller_firework_rwd_3 = new ScrollMagic.Controller();
+
+var scene_firework_rwd_3 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_second"})
+    .setTween("#rwd_firework_3", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+    .addTo(controller_firework_rwd_3);
+//-4------------------------------------------------------------------
+var controller_firework_rwd_4 = new ScrollMagic.Controller();
+
+var scene_firework_rwd_4 = new ScrollMagic.Scene({triggerElement: "#rwd_out_firework_second"})
+    .setTween("#rwd_firework_4", 0.5, {opacity: 1}) // trigger a TweenMax.to tween
+    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+    .addTo(controller_firework_rwd_4);
+
 })

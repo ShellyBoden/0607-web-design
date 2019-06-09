@@ -327,7 +327,8 @@
         position: absolute;
         top:3900px;
         left:-200px;
-        opacity: 0;      
+        opacity: 0;    
+        z-index: 9;    
     }
     #rwd_firework_2{
         position: absolute;
